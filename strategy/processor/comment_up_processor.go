@@ -2,6 +2,7 @@ package processor
 
 import (
 	"context"
+	"fmt"
 
 	"github.com/kaysun/code_taste/strategy/entity"
 )
@@ -13,5 +14,6 @@ type CommentUpProcessor struct {
 // ProcessComment 处理点赞评论
 func (CommentUpProcessor) ProcessComment(ctx context.Context,
 	info entity.CommentInfo) error {
+	fmt.Println("处理点赞评论")
 	return nil
 }
