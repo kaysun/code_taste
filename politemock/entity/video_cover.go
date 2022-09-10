@@ -1,4 +1,4 @@
-package politemock
+package entity
 
 // VideoCover 视频专辑
 type VideoCover struct {

@@ -1,18 +1,18 @@
+// Package main 解决兜底场景，或者业务前期需要mock数据场景，采用装饰者模式，优雅兜底与mock
 package main
 
 import (
 	// import分组：go源码包、本地包、第三方包
 	"context"
 	"fmt"
+	"github.com/kaysun/code_taste/politemock/recommender"
 	"time"
-
-	"github.com/kaysun/code_taste/politemock"
 )
 
 func main() {
 	// 需要mock数据时
-	recommender := politemock.DefaultRecommendVideo{
-		Recommender: politemock.RecommendVideo{},
+	recommender := recommender.DefaultRecommendVideo{
+		Recommender: recommender.RecommendVideo{},
 	}
 	// 不需要mock数据时
 	//recommender := politemock.RecommendVideo{}

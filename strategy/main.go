@@ -1,8 +1,9 @@
+// Package main 处理多种类型，使用简单工厂+策略模式，保证符合开闭原则，修改和添加都单一
 package main
 
 import (
 	"context"
-	
+
 	"github.com/kaysun/code_taste/strategy/entity"
 	"github.com/kaysun/code_taste/strategy/processor"
 )
