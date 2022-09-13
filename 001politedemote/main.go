@@ -15,7 +15,7 @@ func main() {
 		Recommender: recommender.RecommendVideo{},
 	}
 	// 不需要mock数据时
-	//recommender := 001politedemote.RecommendVideo{}
+	//recommender := recommender.RecommendVideo{}
 
 	ctx, _ := context.WithTimeout(context.Background(), 200*time.Millisecond)
 	covers, err := recommender.GetRecommendList(ctx, 25985276)
