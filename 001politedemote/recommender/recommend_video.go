@@ -30,5 +30,5 @@ func (RecommendVideo) GetRecommendList(ctx context.Context,
 			VideoType: entity.VideoTypeTV,
 			VideoTag:  entity.VideoTagJuvenile,
 		},
-	}, errors.New("mock error")
+	}, errors.New("get list error")
 }

@@ -15,12 +15,11 @@ switch可以考虑使用多态解决，可以借鉴002strategy，
 实现“一旦需要修改，我们希望能够跳到系统的某一点，只在该处做修改。”
 */
 type RecordService struct {
-	entity.OperationType
 }
 
 // Process 处理
-func (l RecordService) Process() {
-	switch l.OperationType {
+func (RecordService) Process(operationType entity.OperationType) {
+	switch operationType {
 	case entity.OperationTypeAdd:
 	case entity.OperationTypeUpdate:
 	case entity.OperationTypeDelete:

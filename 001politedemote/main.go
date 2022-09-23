@@ -19,7 +19,7 @@ func main() {
 
 	ctx, _ := context.WithTimeout(context.Background(), 200*time.Millisecond)
 	covers, err := recommender.GetRecommendList(ctx, 25985276)
-	// 超120列折行
+	// 超120个字符折行
 	fmt.Println(fmt.Sprintf("recommender.GetRecommendList "+
 		"covers=%+v, err=%+v", covers, err))
 }
